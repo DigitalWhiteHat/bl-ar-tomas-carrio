@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="Seguimiento semanal de SEO para Tomás Carrió en Bloomberg Línea: qué pasó, por qué, cómo tituló y qué hacer la semana que viene. Se actualiza cada domingo.">
+<title>Qué le rindió a Tomás Carrió esta semana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  /* Identidad Bloomberg Línea: negro, blanco y el verde de «Línea» (#36BF58); titulares en grotesca tipo Neue Haas, texto en Lora */
+  :root {
+    color-scheme: light;
+    --bg: #FFFFFF;
+    --surface: #FFFFFF;
+    --ink: #191919;
+    --ink-2: #3D3D3D;
+    --muted: #6B6B6B;
+    --rule: #DADADA;
+    --rule-strong: #BDBDBD;
+    --neutral-bg: #F4F4F4;
+    --accent: #36BF58;
+    --accent-ink: #15803D;
+    --accent-track: #E3F4E7;
+    --notes-bar: #191919;
+    --c-prop: #36BF58;
+    --c-rev: #0F6B34;
+    --c-rest: #D0D0D0;
+    --good: #15803D;
+    --good-bg: #E8F6EC;
+    --warn: #A15300;
+    --warn-bg: #FFF1E0;
+    --bad: #C0341F;
+    --bad-bg: #FDECE8;
+    --bar-bg: #000000;
+    --bar-ink: #FFFFFF;
+    --bar-muted: #BDBDBD;
+    --bar-accent: #36BF58;
+    --bar-rule: #2A2A2A;
+    --sans: "Neue Haas Grotesk Display Pro", "neue-haas-grotesk-display", "Helvetica Neue", "Inter Tight", Helvetica, Arial, sans-serif;
+    --serif: "Lora", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #0A0A0A;
+      --surface: #141414;
+      --ink: #F2F2F2;
+      --ink-2: #CFCFCF;
+      --muted: #9A9A9A;
+      --rule: #2A2A2A;
+      --rule-strong: #4A4A4A;
+      --neutral-bg: #1C1C1C;
+      --accent: #30AF50;
+      --accent-ink: #4CD472;
+      --accent-track: #13261A;
+      --notes-bar: #CFCFCF;
+      --c-prop: #30AF50;
+      --c-rev: #14773A;
+      --c-rest: #3A3A3A;
+      --good: #4CD472;
+      --good-bg: #0F2A18;
+      --warn: #FFB060;
+      --warn-bg: #2E2110;
+      --bad: #FF7A66;
+      --bad-bg: #2E1512;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0A0A0A;
+    --surface: #141414;
+    --ink: #F2F2F2;
+    --ink-2: #CFCFCF;
+    --muted: #9A9A9A;
+    --rule: #2A2A2A;
+    --rule-strong: #4A4A4A;
+    --neutral-bg: #1C1C1C;
+    --accent: #30AF50;
+    --accent-ink: #4CD472;
+    --accent-track: #13261A;
+    --notes-bar: #CFCFCF;
+    --c-prop: #30AF50;
+    --c-rev: #14773A;
+    --c-rest: #3A3A3A;
+    --good: #4CD472;
+    --good-bg: #0F2A18;
+    --warn: #FFB060;
+    --warn-bg: #2E2110;
+    --bad: #FF7A66;
+    --bad-bg: #2E1512;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: clamp(16px, 4vw, 44px);
+    padding-block: clamp(28px, 5vw, 56px) 72px;
+  }
+  a { color: var(--accent-ink); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  p { margin: 0; max-width: 68ch; }
+  strong { font-weight: 600; color: var(--ink); }
+
+  /* Masthead */
+  .mast {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+    gap: clamp(24px, 5vw, 64px);
+    align-items: end;
+  }
+  .kicker {
+    font: 600 12px/1.2 var(--sans);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-ink);
+    margin-bottom: 16px;
+  }
+  h1 {
+    font-family: var(--sans);
+    font-weight: 780;
+    font-size: clamp(44px, 7vw, 76px);
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  .lede {
+    font-size: clamp(18px, 2vw, 20.5px);
+    line-height: 1.5;
+    color: var(--ink-2);
+    max-width: 46ch;
+  }
+  .spec {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 2px solid var(--ink);
+  }
+  .spec > div { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+  .spec > div:nth-child(odd) { padding-right: 18px; }
+  .spec dt {
+    font: 600 11px/1.3 var(--sans);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .spec dd { margin: 5px 0 0; font: 650 21px/1.15 var(--sans); color: var(--ink); }
+  .spec dd small { display: block; margin-top: 3px; font: 400 13px/1.35 var(--sans); color: var(--muted); }
+  .bezel {
+    height: 14px;
+    margin-top: 26px;
+    background:
+      repeating-linear-gradient(90deg, var(--accent) 0 2px, transparent 2px 60px) left bottom / 100% 14px no-repeat,
+      repeating-linear-gradient(90deg, var(--rule-strong) 0 1px, transparent 1px 12px) left bottom / 100% 7px no-repeat;
+  }
+
+  /* Sections */
+  section { margin-top: clamp(48px, 7vw, 76px); }
+  .sec-head { display: grid; gap: 10px; margin-bottom: 22px; }
+  .eyebrow {
+    font: 600 11.5px/1.2 var(--sans);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  h2 {
+    font-family: var(--sans);
+    font-weight: 740;
+    font-size: clamp(28px, 3.6vw, 38px);
+    line-height: 1.02;
+    margin: 0;
+    text-wrap: balance;
+    max-width: 24ch;
+  }
+  .sec-head p { color: var(--ink-2); }
+  .stack { display: grid; gap: 14px; }
+  .note { font: 400 14px/1.5 var(--sans); color: var(--muted); max-width: 90ch; margin-top: 14px; }
+
+  /* Tables */
+  .table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+  table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; }
+  .t-topics { min-width: 900px; }
+  .t-hooks { min-width: 680px; }
+  .t-mix { min-width: 760px; }
+  .t-ever { min-width: 760px; }
+  .t-gsc { min-width: 720px; }
+  thead th {
+    font: 600 11px/1.3 var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: 12px 14px 10px 0;
+    border-bottom: 1px solid var(--rule-strong);
+    vertical-align: bottom;
+  }
+  tbody th, tbody td {
+    padding: 13px 14px 13px 0;
+    border-bottom: 1px solid var(--rule);
+    text-align: left;
+    vertical-align: middle;
+  }
+  tbody th { font-weight: 650; color: var(--ink); }
+  tbody th .how { display: block; margin-top: 3px; font: 400 13.5px/1.4 var(--serif); color: var(--muted); max-width: 42ch; }
+  th.num, td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  td.chan { color: var(--ink-2); white-space: nowrap; }
+  td.idx { color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  td.idx b { font-weight: 650; color: var(--ink); }
+  .star { color: var(--muted); font-weight: 400; }
+  tr.ref-row th, tr.ref-row td { color: var(--muted); background: var(--neutral-bg); }
+  tr.ref-row th { padding-left: 10px; }
+  .title-cell { font-weight: 500; color: var(--ink); max-width: 46ch; }
+
+  .barline { display: grid; grid-template-columns: minmax(140px, 1fr) 54px; align-items: center; gap: 10px; }
+  .bar { position: relative; height: 12px; background: var(--accent-track); }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; width: var(--w); background: var(--accent); border-radius: 0 4px 4px 0; }
+  .bar .mid { position: absolute; left: var(--mid); top: -5px; bottom: -5px; width: 1px; background: var(--ink); }
+  .barline .val { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600; }
+  .pair { display: grid; gap: 5px; }
+  .pair .row { display: grid; grid-template-columns: minmax(140px, 1fr) 48px; align-items: center; gap: 10px; }
+  .pair .b { height: 9px; background: transparent; position: relative; }
+  .pair .b span { position: absolute; inset: 0 auto 0 0; width: var(--w); border-radius: 0 4px 4px 0; }
+  .pair .notes span { background: var(--notes-bar); }
+  .pair .views span { background: var(--accent); }
+  .pair .v { font-variant-numeric: tabular-nums; text-align: right; font-size: 13px; color: var(--ink-2); }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.3 var(--sans); color: var(--ink-2); margin-bottom: 12px; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .legend i { display: inline-block; width: 18px; height: 9px; border-radius: 0 3px 3px 0; }
+  .legend .k-notes { background: var(--notes-bar); }
+  .legend .k-views { background: var(--accent); }
+  .legend .k-mid { width: 1px; height: 14px; background: var(--ink); border-radius: 0; }
+
+  /* Verdict chips */
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font: 650 12.5px/1 var(--sans);
+    padding: 6px 10px 6px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .chip svg { width: 9px; height: 9px; fill: currentColor; flex: none; }
+  .chip.up { color: var(--good); background: var(--good-bg); }
+  .chip.keep { color: var(--warn); background: var(--warn-bg); }
+  .chip.down { color: var(--bad); background: var(--bad-bg); }
+  .chip.flat { color: var(--ink-2); background: var(--neutral-bg); }
+
+  /* Title molds */
+  .molds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 26px; }
+  .mold {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 18px 20px 16px;
+    display: grid;
+    gap: 12px;
+    align-content: start;
+  }
+  .mold h3 { margin: 0; font: 650 12px/1.2 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .formula { font: 620 18px/1.35 var(--sans); color: var(--ink); text-wrap: balance; }
+  .formula b { font-weight: 620; color: var(--accent-ink); }
+  .mold ul { margin: 0; padding: 12px 0 0; list-style: none; display: grid; gap: 9px; border-top: 1px solid var(--rule); }
+  .mold li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: baseline; font-size: 15px; line-height: 1.45; color: var(--ink-2); }
+  .mold li .v { font: 600 13px/1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); white-space: nowrap; }
+
+  /* Two-list plan */
+  .plan { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+  .plan > div { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 10px; align-content: start; }
+  .plan h3 { margin: 0; font: 700 15px/1.2 var(--sans); display: flex; align-items: center; gap: 8px; }
+  .plan ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; }
+  .plan li { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .plan li::marker { color: var(--muted); }
+
+  /* Calendar */
+  .cal { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .cal li {
+    display: grid;
+    grid-template-columns: 128px minmax(0, 1fr) 210px;
+    gap: 22px;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .when { font: 740 16px/1.15 var(--sans); text-transform: uppercase; letter-spacing: 0.02em; color: var(--ink); }
+  .when small { display: block; margin-top: 5px; font: 400 12.5px/1.3 var(--sans); text-transform: none; letter-spacing: 0; color: var(--muted); }
+  .what h3 { margin: 0 0 4px; font: 650 17px/1.3 var(--sans); text-wrap: balance; }
+  .what p { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .what .pitch { font-style: italic; color: var(--ink); margin-top: 6px; }
+  .bench { font: 400 13px/1.45 var(--sans); color: var(--muted); display: grid; gap: 6px; align-content: start; }
+  .bench b { font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .prio { display: inline-flex; align-items: center; gap: 7px; font: 650 12.5px/1 var(--sans); color: var(--ink); }
+  .prio svg { width: 11px; height: 11px; flex: none; }
+
+  /* Stop list */
+  .stop { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; border-top: 2px solid var(--ink); }
+  .stop li { padding: 14px 0; border-bottom: 1px solid var(--rule); display: grid; gap: 4px; }
+  .stop h3 { margin: 0; font: 650 16px/1.3 var(--sans); }
+  .stop p { font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+
+  footer { margin-top: 64px; padding-top: 16px; border-top: 1px solid var(--rule-strong); display: grid; gap: 8px; }
+  footer p { font: 400 13px/1.55 var(--sans); color: var(--muted); max-width: 100ch; }
+
+  @media (max-width: 820px) {
+    .mast { grid-template-columns: minmax(0, 1fr); }
+    .molds, .plan, .stop { grid-template-columns: minmax(0, 1fr); }
+    .cal li { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  }
+
+  /* Barra de Bloomberg Línea y tipografía de la casa */
+  .bl-bar { background: var(--bar-bg); color: var(--bar-ink); border-bottom: 1px solid var(--bar-rule); }
+  .bl-bar-in { max-width: 1100px; margin: 0 auto; padding-inline: clamp(16px, 4vw, 44px); }
+  .bl-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding-block: 16px 14px; }
+  .bl-mark { font: 700 clamp(22px, 2.8vw, 30px)/1 var(--sans); letter-spacing: -0.025em; color: var(--bar-ink); white-space: nowrap; }
+  .bl-mark span { color: var(--bar-accent); }
+  .bl-tag { font: 600 11.5px/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--bar-muted); }
+  .bl-nav { display: flex; gap: 24px; overflow-x: auto; padding-block: 11px 12px; border-top: 1px solid var(--bar-rule); scrollbar-width: none; }
+  .bl-nav::-webkit-scrollbar { display: none; }
+  .bl-nav a { color: var(--bar-ink); text-decoration: none; font: 500 14px/1.2 var(--sans); white-space: nowrap; }
+  .bl-nav a:hover { color: var(--bar-accent); }
+  .bl-nav a:focus-visible { outline: 2px solid var(--bar-accent); outline-offset: 3px; border-radius: 2px; }
+  .kicker, .eyebrow { font: 700 12px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); }
+  h1 { font-family: var(--sans); font-weight: 600; font-size: clamp(34px, 5vw, 54px); line-height: 1.04; letter-spacing: -0.015em; color: var(--ink); max-width: 22ch; }
+  h2 { font-family: var(--sans); font-weight: 600; font-size: clamp(24px, 2.8vw, 32px); line-height: 1.1; letter-spacing: -0.01em; color: var(--ink); }
+  .lede { font-family: var(--sans); font-size: clamp(18px, 1.9vw, 21px); line-height: 1.45; color: var(--ink-2); }
+  .byline { margin-top: 16px; font: 400 14px/1.4 var(--sans); color: var(--muted); max-width: none; }
+  .byline b { font-weight: 700; color: var(--ink); }
+  .bezel { height: 4px; margin-top: 28px; background: linear-gradient(90deg, var(--accent) 0 88px, var(--ink) 88px 100%); }
+
+  /* Guía de la semana */
+  .plan + .plan { margin-top: 16px; }
+  .sub-h { margin: 34px 0 14px; font: 700 13px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+  .semana { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .semana article { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 8px; align-content: start; }
+  .semana p { font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+  .semana .lbl { font: 700 12px/1.2 var(--sans); letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-ink); }
+  .semana .pitch { font: 600 17px/1.35 var(--sans); color: var(--ink); text-wrap: balance; }
+  .semana .ev { font: 400 13px/1.45 var(--sans); color: var(--muted); }
+  .probar { margin: 0; padding-left: 18px; display: grid; gap: 8px; max-width: 80ch; }
+  .probar li { font-size: 15.5px; line-height: 1.5; color: var(--ink-2); }
+  .probar li::marker { color: var(--muted); }
+  @media (max-width: 820px) { .semana { grid-template-columns: minmax(0, 1fr); } }
+
+  /* Impacto de las propuestas (acotado a .imp) */
+  .imp .tiles { margin: 30px 0 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid var(--ink); }
+  .imp .tiles > div { padding: 14px 18px 14px 0; border-bottom: 1px solid var(--rule); }
+  .imp .tiles dt { font: 600 11px/1.3 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .imp .tiles dd { margin: 6px 0 0; font: 700 30px/1.05 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .imp .tiles dd small { display: block; margin-top: 5px; font: 400 13px/1.4 var(--sans); color: var(--muted); }
+  /* Chart */
+  .imp .legend { display: flex; flex-wrap: wrap; gap: 8px 22px; font: 500 13px/1.3 var(--sans); color: var(--ink-2); margin-bottom: 12px; }
+  .imp .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .imp .legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
+  .imp .legend .k-prop { background: var(--c-prop); }
+  .imp .legend .k-rev { background: var(--c-rev); }
+  .imp .legend .k-rest { background: var(--c-rest); }
+  .imp .legend .k-ma { width: 18px; height: 2px; background: var(--ink); border-radius: 0; }
+  .imp .legend .k-seo { background: var(--c-prop); }
+  .imp #chart .b-rest { fill: var(--c-rest); fill-opacity: .55; }
+  .imp #chart .b-seo { fill: var(--c-prop); fill-opacity: .9; }
+  .imp #chart .m-seo { fill: var(--c-prop); }
+  .imp #chart .ma { stroke: var(--ink); stroke-opacity: .45; }
+  .imp .chart-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 14px 10px 8px; position: relative; }
+  .imp #chart { position: relative; width: 100%; min-height: 300px; touch-action: pan-y; }
+  .imp #chart svg { display: block; overflow: visible; }
+  .imp #chart .tick { font: 500 11.5px var(--sans); fill: var(--muted); font-variant-numeric: tabular-nums; }
+  .imp #chart .evnum { font: 700 11px var(--sans); fill: var(--ink); }
+  .imp #chart .anno { font: 500 11.5px var(--sans); fill: var(--muted); }
+  .imp .tip { position: absolute; top: 0; left: 0; pointer-events: none; background: var(--surface); border: 1px solid var(--rule-strong); border-radius: 6px; padding: 9px 11px; font: 400 12.5px/1.45 var(--sans); color: var(--ink-2); box-shadow: 0 6px 18px rgba(0,0,0,.12); min-width: 190px; }
+  .imp .tip[hidden] { display: none; }
+  .imp .tip b { color: var(--ink); font-weight: 650; }
+  .imp .tip .row { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; font-variant-numeric: tabular-nums; }
+  .imp .tip .row i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .imp .tip .tot { border-top: 1px solid var(--rule); margin-top: 5px; padding-top: 5px; }
+  .imp .events { list-style: none; margin: 16px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px 26px; }
+  .imp .events li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start; font: 400 14px/1.45 var(--sans); color: var(--ink-2); }
+  .imp .events .num { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--ink); font: 700 11.5px var(--sans); color: var(--ink); background: var(--surface); }
+  .imp .events b { color: var(--ink); font-weight: 650; }
+
+  /* Tables */
+  .imp .table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+  .imp table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 14.5px; }
+  .imp thead th { font: 600 11px/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 12px 14px 10px 0; border-bottom: 1px solid var(--rule-strong); vertical-align: bottom; }
+  .imp tbody th, .imp tbody td { padding: 13px 14px 13px 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .imp th.num, .imp td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .imp tbody th { font-weight: 650; color: var(--ink); }
+  .imp tr.muted th, .imp tr.muted td { color: var(--muted); background: var(--neutral-bg); }
+  .imp tr.muted th { padding-left: 10px; }
+  .imp .t-ab { min-width: 560px; }
+  .imp .t-ab thead th.num { white-space: normal; }
+  .imp .t-ab tbody th { white-space: nowrap; }
+  .imp .t-ab tbody th .sub { display: block; margin-top: 3px; font-weight: 400; font-size: 12.5px; }
+  .imp .t-prop { min-width: 900px; }
+  .imp .t-prop td.when { font: 650 14px/1.2 var(--sans); white-space: nowrap; color: var(--ink); }
+  .imp .t-prop td.when small { display: block; margin-top: 4px; font-weight: 400; font-size: 12.5px; color: var(--muted); }
+  .imp .tipo { display: inline-flex; align-items: center; gap: 7px; font: 650 12px/1 var(--sans); color: var(--ink); }
+  .imp .tipo i { width: 11px; height: 11px; border-radius: 2px; display: inline-block; }
+  .imp .tipo.k-e i { background: var(--c-prop); }
+  .imp .tipo.k-r i { background: var(--c-rev); }
+  .imp .tipo.k-a i { background: transparent; border: 2px solid var(--c-rev); }
+  .imp .que { margin-top: 6px; font: 400 14px/1.45 var(--serif); color: var(--ink-2); max-width: 36ch; }
+  .imp .nota { font: 500 14.5px/1.4 var(--sans); color: var(--ink); max-width: 44ch; }
+  .imp .meta { display: block; margin-top: 4px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp td.res { min-width: 10em; max-width: 13em; }
+  .imp td.res .big { display: block; font: 700 18px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); }
+  .imp td.res small { display: block; margin-top: 3px; font: 400 12.5px/1.35 var(--sans); color: var(--muted); }
+  .imp .t-prop td:nth-child(2) { min-width: 14em; }
+  .imp .rel { display: inline-flex; align-items: center; font: 650 12.5px/1 var(--sans); padding: 6px 10px; border-radius: 999px; white-space: nowrap; }
+  .imp .rel.hi { color: var(--good); background: var(--good-bg); }
+  .imp .rel.up { color: var(--good); background: transparent; border: 1.5px solid var(--good); }
+  .imp .rel.eq { color: var(--ink-2); background: var(--neutral-bg); }
+  .imp .rel.lo { color: var(--bad); background: var(--bad-bg); }
+  .imp .rel.na { color: var(--muted); background: transparent; border: 1px dashed var(--rule-strong); }
+
+  .imp .compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .imp .compare > div { border-top: 2px solid var(--ink); padding-top: 12px; display: grid; gap: 8px; align-content: start; }
+  .imp .compare h3 { margin: 0; font: 650 12px/1.2 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .imp .vs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; font-family: var(--sans); }
+  .imp .vs .a { font: 700 34px/1 var(--sans); color: var(--accent-ink); font-variant-numeric: tabular-nums; }
+  .imp .vs .b { font: 700 34px/1 var(--sans); color: var(--muted); font-variant-numeric: tabular-nums; }
+  .imp .vs span { font: 400 13.5px/1.35 var(--sans); color: var(--muted); }
+  .imp .compare p { font-size: 15.5px; color: var(--ink-2); }
+  .imp blockquote { margin: 26px 0 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--accent); max-width: 60ch; }
+  .imp blockquote p { font: italic 400 20px/1.45 var(--serif); color: var(--ink); }
+  .imp blockquote footer { margin-top: 6px; font: 400 13px/1.4 var(--sans); color: var(--muted); }
+
+  .imp .caveats { margin: 0; padding-left: 18px; display: grid; gap: 10px; max-width: 80ch; }
+  .imp .caveats li { font-size: 15.5px; line-height: 1.55; color: var(--ink-2); }
+  .imp .caveats li::marker { color: var(--muted); }
+
+
+  @media (max-width: 820px) {
+    .imp .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .imp .compare { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .imp .t-prop, .imp .t-prop tbody { display: block; min-width: 0; }
+    .imp .t-prop thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    .imp .t-prop tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 12px; align-items: center; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+    .imp .t-prop tbody td { display: block; padding: 0; border: 0; }
+    .imp .t-prop td.when { grid-column: 1 / -1; display: flex; gap: 8px; align-items: baseline; }
+    .imp .t-prop td.when small { display: inline; margin: 0; }
+    .imp .t-prop td:nth-child(2), .imp .t-prop td:nth-child(3) { grid-column: 1 / -1; }
+    .imp .t-prop .que, .imp .t-prop .nota { max-width: none; }
+  }
+  .imp .tiles { margin: 4px 0 30px; }
+  .imp tbody th, .imp tbody td { vertical-align: top; }
+  .imp .t-prop td.when, .imp .t-prop td.when small { text-transform: none; letter-spacing: 0; }
+  .imp blockquote footer { border: 0; padding: 0; display: block; }
+  .imp .legend .k-ref { width: 1px; height: 16px; background: var(--ink); border-radius: 0; }
+  .imp .nb { margin: 0 0 30px; }
+  .imp .nb-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .imp .nb-row { display: grid; grid-template-columns: minmax(0, 17em) minmax(0, 1fr) 9.5em; gap: 6px 16px; align-items: center; padding: 9px 0; border-bottom: 1px solid var(--rule); }
+  .imp .nb-lab { font: 600 14px/1.3 var(--sans); color: var(--ink); }
+  .imp .nb-lab small { display: block; margin-top: 2px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp .nb .bar { height: 16px; }
+  .imp .nb .bar .fill.k-e { background: var(--c-prop); }
+  .imp .nb .bar .fill.k-r { background: var(--c-rev); }
+  .imp .nb-val { font: 700 15px/1.1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink); text-align: right; white-space: nowrap; }
+  .imp .nb-val small { display: block; margin-top: 2px; font: 400 12px/1.3 var(--sans); color: var(--muted); }
+  .imp .nb figcaption { margin-top: 10px; }
+  .imp .t-sem { min-width: 560px; }
+  .imp .t-vida { min-width: 640px; }
+  .imp .t-vida thead th.num { white-space: normal; }
+  .imp .t-vida tbody th { font: 500 14px/1.35 var(--sans); color: var(--ink); max-width: 30em; }
+  .imp .t-vida tbody th small { display: block; margin-top: 3px; font: 400 12.5px/1.3 var(--sans); color: var(--muted); }
+  .imp .t-vida td small { color: var(--muted); font-size: 12.5px; }
+  .imp .t-vida tr.top th, .imp .t-vida tr.top td { background: var(--accent-track); }
+  .imp .legend .k-a { background: transparent; border: 2px solid var(--c-rev); box-sizing: border-box; }
+  .imp .nb .bar .fill.k-a { background: transparent; border: 2px solid var(--c-rev); box-sizing: border-box; }
+  .imp .t-sem thead th.num { white-space: normal; }
+  .imp .t-sem tbody th { white-space: nowrap; }
+  .imp .t-sem tr.top th, .imp .t-sem tr.top td { font-weight: 650; color: var(--ink); background: var(--accent-track); }
+  .parte { margin: clamp(52px, 7vw, 80px) 0 0; padding-top: 12px; border-top: 4px solid var(--ink); display: flex; align-items: center; gap: 10px; font: 700 13px/1.2 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); max-width: none; }
+  .parte span { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: var(--bar-bg); font-size: 12.5px; letter-spacing: 0; }
+  .parte + section, .parte + .imp > section:first-child { margin-top: 28px; }
+  @media (max-width: 640px) {
+    .imp .nb-row { grid-template-columns: minmax(0, 1fr) auto; }
+    .imp .nb-lab { grid-column: 1 / -1; }
+  }
+
+.foto{width:100%;max-width:730px;border-collapse:collapse;margin:18px 0 6px}
+.foto th,.foto td{padding:9px 12px;text-align:right;border-bottom:1px solid #e6e6e6;font-variant-numeric:tabular-nums}
+.foto thead th{text-align:right;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b}
+.foto tbody th{text-align:left;font-weight:600}
+.foto .tot th,.foto .tot td{border-top:2px solid #191919;font-weight:700}
+.tm tbody td:first-child{text-align:left}
+.sube{color:#1d7a37;font-weight:700}.baja{color:#b3261e;font-weight:700}
+.notas{width:100%;border-collapse:collapse;margin:14px 0}
+.notas th{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b;text-align:left;
+ padding:6px 10px;border-bottom:1px solid #191919}
+.notas th:not(:first-child){text-align:right}
+.notas td{padding:9px 10px;border-bottom:1px solid #eee;vertical-align:top}
+.notas td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.notas td:not(:first-child):not(.n){text-align:right;font-variant-numeric:tabular-nums;color:#6b6b6b;white-space:nowrap}
+.notas .tit{white-space:normal;line-height:1.35;max-width:36em;font-weight:400}
+.notas .meta{display:block;font-size:12px;color:#6b6b6b;margin-top:3px}
+.clave{border-left:3px solid #36BF58;background:#f7fbf8;padding:11px 14px;margin:14px 0 16px;font-weight:600}
+.barras{margin:16px 0 4px;max-width:760px}
+.bl{display:grid;grid-template-columns:150px 86px 1fr 62px;align-items:center;gap:10px;padding:5px 0;font-size:13.5px}
+.bl .bk{font-weight:600}
+.bl .bq{color:#6b6b6b;font-size:12px}
+.bl .bb{background:#f0f0f0;height:14px;border-radius:2px;overflow:hidden}
+.bl .bb i{display:block;height:100%;border-radius:2px}
+.bl .bv{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.fig{margin:20px 0;padding:0}
+.fig .tr{width:100%;height:auto;display:block}
+.trk{font-size:13px;color:#6b6b6b;margin:0 0 2px}
+.fig figcaption{font-size:13.5px;color:#191919;margin-top:8px;line-height:1.55;max-width:46em}
+.fig .medido{display:block;margin-top:5px;font-size:12.5px;color:#6b6b6b}
+.pie{font-size:13px;color:#6b6b6b;line-height:1.55}
+.cal{width:100%;border-collapse:collapse;margin:14px 0}
+.cal th{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b;text-align:left;padding:6px 10px;border-bottom:1px solid #191919}
+.cal td{padding:10px;border-bottom:1px solid #eee;vertical-align:top;line-height:1.5}
+.cal td:first-child{font-weight:600;white-space:nowrap;width:12em}
+.cal3 td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap;width:7em;color:#1d7a37}
+.cal3 th:last-child{text-align:right}
+.cal3 td.tit{font-weight:400;line-height:1.5}
+.reco li{margin-bottom:10px;line-height:1.55}
+.balance{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin:18px 0 6px;align-items:start}
+.bcol h3{margin:0 0 10px;font-size:14px;letter-spacing:.05em;text-transform:uppercase}
+.bcol.bien h3{color:#1d7a37}.bcol.mal h3{color:#b3261e}
+.bcol ul{margin:0;padding:0;list-style:none;display:grid;gap:13px}
+.bcol li{font-size:14.5px;line-height:1.5;padding-left:13px;border-left:2px solid #e6e6e6}
+.bcol.bien li{border-left-color:#36BF58}.bcol.mal li{border-left-color:#e4b4b0}
+.bcol .cif{display:block;margin-top:4px;font-variant-numeric:tabular-nums;font-weight:700;font-size:13.5px}
+.bcol.bien .cif{color:#1d7a37}.bcol.mal .cif{color:#b3261e}
+@media (max-width:720px){.balance{grid-template-columns:1fr;gap:22px}}
+.bl-bar{background:#000;color:#fff;margin:0 0 30px;border-bottom:4px solid #36BF58}
+.bl-bar-in{max-width:1100px;margin:0 auto;padding-inline:clamp(16px,4vw,44px)}
+.bl-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:13px 0 9px}
+.bl-mark{font:700 19px/1 var(--sans,system-ui);letter-spacing:-.01em}
+.bl-mark span{color:#36BF58}
+.bl-tag{font:600 10.5px/1 var(--sans,system-ui);letter-spacing:.09em;text-transform:uppercase;color:#9a9a9a}
+.bl-nav{display:flex;flex-wrap:wrap;gap:0 18px;padding:0 0 11px}
+.bl-nav a{font:500 12.5px/1.7 var(--sans,system-ui);color:#cfcfcf;text-decoration:none;white-space:nowrap}
+.bl-nav a:hover{color:#36BF58}
+@media (max-width:620px){.bl-nav{gap:0 13px}.bl-nav a{font-size:11.5px}.bl-tag{display:none}}
+/* El contenedor NO es <main> a secas: la plantilla pone el max-width en .page. Sin esa clase el
+   documento se estiraba de borde a borde en pantalla ancha —los párrafos se salvaban por su propio
+   max-width, pero las tablas, las barras y las gráficas cruzaban los 1.440px—. Se refuerza aquí por
+   si la plantilla cambia de clase. */
+main.page{max-width:1100px;margin:0 auto;padding-inline:clamp(16px,4vw,44px)}
+.pie-doc{margin-top:34px;padding-top:16px;border-top:1px solid #e6e6e6;font-size:13px;color:#6b6b6b}
+@media (max-width:620px){
+ .bl{grid-template-columns:104px 1fr 56px;gap:7px}
+ .bl .bq{display:none}
+ .foto th,.foto td{padding:8px 6px;font-size:13.5px}
+ .foto thead th{font-size:11px;letter-spacing:0;text-transform:none;white-space:nowrap}
+ .notas th{letter-spacing:0;text-transform:none;font-size:11.5px;padding:6px 6px}
+ .notas td{padding:8px 6px}
+ .cal td:first-child{width:auto}
+}
+</style>
+</head>
+<body>
+<div class='bl-bar'><div class='bl-bar-in'><div class='bl-top'><span class='bl-mark'>Bloomberg <span>Línea</span></span><span class='bl-tag'>Uso interno · SEO</span></div><nav class='bl-nav' aria-label='Secciones'><a href='#s-foto'>La semana</a><a href='#s-balance'>Bien y mal</a><a href='#s-porque'>Por qué</a><a href='#s-temas'>Temas</a><a href='#s-titulo'>Titulación</a><a href='#s-trends'>Trends</a><a href='#s-rival'>Competencia</a><a href='#s-cal'>Calendario</a><a href='#s-hacer'>Qué hacer</a></nav></div></div>
+<main class='page'>
+<p class='eyebrow'>Seguimiento semanal · 18 – 24 oct</p>
+<h1>Qué le rindió a Tomás Carrió esta semana</h1>
+<p class='lede'>Más que duplicó su semana con dos notas menos, y el tema que lo hizo está hoy casi en su máximo del año. Hay margen para seguir.</p>
+<section id="s-foto"><h2>La semana en una tabla</h2><p class='clave'>Discover casi triplicó, de 813 a 2.341 clics, y la Búsqueda subió un 14% publicando dos notas menos.</p><table class='foto'><thead><tr><th></th><th>11 – 17 oct</th><th>18 – 24 oct</th><th>Cambio</th></tr></thead><tbody><tr><th>Discover</th><td>813</td><td>2.341</td><td class='sube'>+188%</td></tr><tr><th>Búsqueda de Google</th><td>285</td><td>325</td><td class='sube'>+14%</td></tr><tr class='tot'><th>Total</th><td>1.098</td><td>2.666</td><td class='sube'>+143%</td></tr><tr><th>Notas publicadas</th><td>10</td><td>8</td><td class='baja'>-20%</td></tr></tbody></table><div class='barras'><div class='bl'><span class='bk'>Discover</span><span class='bq'>11 – 17 oct</span><span class='bb'><i style='width:34.7%;background:#6b6b6b'></i></span><span class='bv'>813</span></div><div class='bl'><span class='bk'>Discover</span><span class='bq'>18 – 24 oct</span><span class='bb'><i style='width:100.0%;background:#36BF58'></i></span><span class='bv'>2.341</span></div><div class='bl'><span class='bk'>Búsqueda de Google</span><span class='bq'>11 – 17 oct</span><span class='bb'><i style='width:12.2%;background:#6b6b6b'></i></span><span class='bv'>285</span></div><div class='bl'><span class='bk'>Búsqueda de Google</span><span class='bq'>18 – 24 oct</span><span class='bb'><i style='width:13.9%;background:#36BF58'></i></span><span class='bv'>325</span></div></div><p class='pie'>Clics de Search Console, semana contra semana. La autoría la decide el feed de Tomás, no el filtro.</p></section>
+<section id="s-balance"><h2>Qué hizo bien y qué hizo mal</h2><p class='clave'>Explotó bien una historia y la convirtió en dos notas. Es el método correcto.</p><div class='balance'><div class='bcol bien'><h3>Lo que hizo bien</h3><ul><li><b>Le sacó dos notas al mismo hecho.</b> Porque primero dio el hecho y después la explicación con la cita, que es como se estira una historia sin repetirla.<span class='cif'>1.990 y 366 clics · el 88% de su semana</span></li><li><b>Eligió un tema que estaba subiendo, no bajando.</b> Porque el interés por la licitación está en 89 sobre 100, casi en su máximo del año, y él llegó con el hecho.<span class='cif'>1.990 clics con 58.531 impresiones</span></li><li><b>Mantuvo el largo dentro de la banda medida.</b> Porque a 104 caracteres entra el actor, la acción y la consecuencia sin recortar.<span class='cif'>104 de mediana, dentro de los 100-120</span></li></ul></div><div class='bcol mal'><h3>Lo que no le funcionó</h3><ul><li><b>Sus notas de deuda y tasas se apagan en una semana.</b> Porque el dato se consume el día que sale: quien necesitaba el número ya lo tiene y nadie vuelve.<span class='cif'>570 → 2 y 306 → 5</span></li><li><b>La cifra en el titular aparece solo en lo que no funcionó.</b> Porque «$1,7 billones» no le dice nada a quien no sigue la operatoria diaria: es jerga, no gancho.<span class='cif'>cifra en el 33% de lo que no funcionó y en el 0% de lo que sí</span></li><li><b>Bajó a ocho notas.</b> Porque con dos notas sosteniendo el 88% de la semana, cualquier semana sin historia grande cae sola.<span class='cif'>10 → 8 notas</span></li></ul></div></div></section>
+<section id="s-porque"><h2>Por qué subió o por qué bajó</h2><p class='clave'>Una historia de licitación le dio el 75% de la semana, y tuvo segunda parte propia.</p><p>La semana la hizo <b>«Belgrano Cargas: Grupo México desiste de participar en licitación de proyecto ferroviario», con 1.990 clics y 58.531 impresiones</b>: el 75% de todo lo suyo. Y lo hizo bien, porque <b>le sacó una segunda nota al mismo hecho</b>: «“Resulta ineficiente”: Grupo México explicó por qué no participará de la licitación», con 366 clics. Esa es la forma correcta de explotar una historia: el hecho y después la explicación con la cita.
+
+<b>Lo que se apagó es lo de deuda y tasas</b>, que es su materia habitual: «Tesoro argentino absorberá $1,7 billones pero una operación de recompra quedó desierta» pasó de 570 clics a 2, y el IPC de septiembre de 306 a 5. Son notas que viven un día porque el dato se consume el día que sale.</p></section>
+<section id="s-temas"><h2>Qué tema funcionó y cuál no</h2><p class='clave'>Dos notas hacen el 88% de la semana y son la misma historia contada dos veces. Debajo nada pasa de 65 clics.</p><h3>Lo que funcionó</h3><table class='notas'><thead><tr><th>Nota</th><th>Clics</th><th>Impresiones</th></tr></thead><tbody><tr><td class='tit'>Belgrano Cargas: Grupo México desiste de participar en licitación de privatización de trenes argentinos<span class='meta'>1.900 de Discover + 90 de Búsqueda · Argentina · 103 caracteres</span></td><td class='n'>1.990</td><td>58.531</td></tr><tr><td class='tit'>“Resulta ineficiente”: Grupo México explicó por qué no participará de la privatización del Belgrano Cargas<span class='meta'>332 de Discover + 34 de Búsqueda · Argentina · 106 caracteres</span></td><td class='n'>366</td><td>5.726</td></tr><tr><td class='tit'>Milei busca profundizar el alcance de su motosierra con nuevos recortes de empleo público<span class='meta'>62 de Búsqueda + 1 de Discover · Argentina · 89 caracteres</span></td><td class='n'>63</td><td>2.174</td></tr><tr><td class='tit'>Milei posterga un mes la llegada de los fondos FAL: qué cambia y motivos de la nueva prórroga<span class='meta'>55 de Búsqueda + 3 de Discover · Argentina · 93 caracteres</span></td><td class='n'>58</td><td>4.447</td></tr><tr><td class='tit'>¿Carne cara o barata? Cómo está el precio por kilo en Argentina frente a otros países de la región<span class='meta'>39 de Discover + 14 de Búsqueda · Argentina · 98 caracteres · region</span></td><td class='n'>53</td><td>3.497</td></tr><tr><td class='tit'>Canje para aliviar presión cambiaria y vencimientos de deuda en pesos obtiene adhesión del 72%<span class='meta'>26 de Discover + 15 de Búsqueda · Argentina · 94 caracteres · cifra</span></td><td class='n'>41</td><td>1.675</td></tr></tbody></table><h3>Lo que rendía la semana del 11 – 17 oct y ya no</h3><table class='notas'><thead><tr><th>Nota</th><th>11 – 17 oct</th><th>18 – 24 oct</th></tr></thead><tbody><tr><td class='tit'>Tesoro argentino absorberá $1,7 billones pero una operación de recompra de deuda limitará la tensión sobre tasas</td><td class='n'>570</td><td class='n'>2</td></tr><tr><td class='tit'>IPC: inflación en Argentina se acelera en septiembre pero se mantiene debajo del 2%</td><td class='n'>306</td><td class='n'>5</td></tr></tbody></table><h3>Lo que no arrancó</h3><table class='notas'><thead><tr><th>Nota</th><th>Clics</th></tr></thead><tbody><tr><td class='tit'>Renuncia funcionario que estaba al frente de una de las grandes apuestas de la argentina de Milei<span class='meta'>97 caracteres</span></td><td class='n'>14</td></tr><tr><td class='tit'>Trade no electoral: qué activos argentinos recomiendan para protegerse de la incertidumbre<span class='meta'>90 caracteres</span></td><td class='n'>38</td></tr><tr><td class='tit'>Canje para aliviar presión cambiaria y vencimientos de deuda en pesos obtiene adhesión del 72%<span class='meta'>94 caracteres · cifra</span></td><td class='n'>41</td></tr><tr><td class='tit'>¿Carne cara o barata? Cómo está el precio por kilo en Argentina frente a otros países de la región<span class='meta'>98 caracteres · region</span></td><td class='n'>53</td></tr></tbody></table></section>
+<section id="s-titulo"><h2>Cómo tituló</h2><p class='clave'>La cifra aparece en un tercio de las notas que no arrancaron y en ninguna de las que sí.</p><table class='foto tm'><thead><tr><th>Marca del titular</th><th>En las que funcionaron</th><th>En las que no</th></tr></thead><tbody><tr><td>cifra</td><td class='n'>0%</td><td class='n'>33%</td></tr></tbody></table><p class='pie'>Largo medido con <code>len()</code>: las que funcionaron tienen <b>104 caracteres</b> de mediana y las que no, <b>94</b>.</p><p>Solo una marca separa, y es negativa: <b>la cifra está en el 33% de las notas que no arrancaron y en el 0% de las que funcionaron</b>. Encaja con lo que se ve en sus notas: las de deuda, que van cargadas de cifras —«$1,7 billones», «IPC de septiembre»— son justo las que se apagan. Su mediana de largo es de <b>104 caracteres en las que funcionaron y 94 en las que no</b>, dentro de la banda de 100 a 120 medida para la Búsqueda: <b>la titulación no es su problema</b>.
+
+Su nota mayor tiene 103 caracteres, ninguna cifra y un hecho claro en el verbo: alguien desiste de algo. Eso es lo que hay que repetir.</p></section>
+<section id="s-trends"><h2>La prueba de que el tema tiene recorrido</h2><p class='clave'>El tema que le dio la semana está hoy en 89 sobre 100. Casi nunca se puede decir eso de un tema ya trabajado.</p><figure class='fig'><p class='trk'><b>belgrano cargas</b> · AR · serie semanal, índice de Google Trends</p><svg viewBox='0 0 720 215' class='tr' role='img' aria-label='Interés de búsqueda de belgrano cargas en AR, índice 0 a 100'><line x1='40' y1='181.0' x2='628' y2='181.0' stroke='#e6e6e6' stroke-width='1' fill='none'/><text x='33' y='185.0' text-anchor='end' font-size='11' fill='#6b6b6b'>0</text><line x1='40' y1='99.5' x2='628' y2='99.5' stroke='#e6e6e6' stroke-width='1' fill='none'/><text x='33' y='103.5' text-anchor='end' font-size='11' fill='#6b6b6b'>50</text><line x1='40' y1='18.0' x2='628' y2='18.0' stroke='#e6e6e6' stroke-width='1' fill='none'/><text x='33' y='22.0' text-anchor='end' font-size='11' fill='#6b6b6b'>100</text><path d='M40.0,181.0 L51.3,161.4 L62.6,158.2 L73.9,181.0 L85.2,181.0 L96.5,181.0 L107.8,181.0 L119.2,181.0 L130.5,181.0 L141.8,156.5 L153.1,181.0 L164.4,181.0 L175.7,158.2 L187.0,181.0 L198.3,163.1 L209.6,156.5 L220.9,181.0 L232.2,156.5 L243.5,181.0 L254.8,163.1 L266.2,181.0 L277.5,181.0 L288.8,181.0 L300.1,158.2 L311.4,140.2 L322.7,163.1 L334.0,93.0 L345.3,137.0 L356.6,164.7 L367.9,158.2 L379.2,181.0 L390.5,146.8 L401.8,159.8 L413.2,146.8 L424.5,158.2 L435.8,181.0 L447.1,181.0 L458.4,143.5 L469.7,150.0 L481.0,159.8 L492.3,151.7 L503.6,150.0 L514.9,18.0 L526.2,94.6 L537.5,128.8 L548.8,154.9 L560.2,181.0 L571.5,119.1 L582.8,161.4 L594.1,143.5 L605.4,89.7 L616.7,35.9 L616.7,181.0 L40.0,181.0 Z' fill='#36BF58' fill-opacity='.12' stroke='none'/><path d='M40.0,181.0 L51.3,161.4 L62.6,158.2 L73.9,181.0 L85.2,181.0 L96.5,181.0 L107.8,181.0 L119.2,181.0 L130.5,181.0 L141.8,156.5 L153.1,181.0 L164.4,181.0 L175.7,158.2 L187.0,181.0 L198.3,163.1 L209.6,156.5 L220.9,181.0 L232.2,156.5 L243.5,181.0 L254.8,163.1 L266.2,181.0 L277.5,181.0 L288.8,181.0 L300.1,158.2 L311.4,140.2 L322.7,163.1 L334.0,93.0 L345.3,137.0 L356.6,164.7 L367.9,158.2 L379.2,181.0 L390.5,146.8 L401.8,159.8 L413.2,146.8 L424.5,158.2 L435.8,181.0 L447.1,181.0 L458.4,143.5 L469.7,150.0 L481.0,159.8 L492.3,151.7 L503.6,150.0 L514.9,18.0 L526.2,94.6 L537.5,128.8 L548.8,154.9 L560.2,181.0 L571.5,119.1 L582.8,161.4 L594.1,143.5 L605.4,89.7 L616.7,35.9' fill='none' stroke='#36BF58' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><circle cx='514.9' cy='18.0' r='4.5' fill='#191919' stroke='#ffffff' stroke-width='2'/><circle cx='616.7' cy='35.9' r='4.5' fill='#36BF58' stroke='#ffffff' stroke-width='2'/><text x='514.9' y='7.0' text-anchor='middle' font-size='12' font-weight='700' fill='#191919'>100 · 16 ago</text><text x='625.7' y='39.9' font-size='12' font-weight='700' fill='#36BF58'>hoy 89</text><text x='40' y='205' font-size='11' fill='#6b6b6b'>26 oct</text><text x='628' y='205' text-anchor='end' font-size='11' fill='#6b6b6b'>18 oct</text></svg><figcaption><b>Esto es poco habitual y conviene aprovecharlo.</b> El interés por Belgrano Cargas pasó de un suelo de cero a <b>89 sobre 100 hoy</b>, con el pico del año en 100 el 16 de agosto. Es decir: <b>el tema todavía está vivo y casi en su máximo</b>, y él ya tiene dos notas posicionadas. Cada paso de la licitación —quién se presenta, qué plazos, qué pasa con los trenes— tiene público esperando ahora mismo.<span class='medido'>Medido en la serie: hoy está en 89, por encima de su suelo habitual (0), y el pico fue 100.</span></figcaption></figure><figure class='fig'><p class='trk'><b>dolar hoy</b> · AR · serie semanal, índice de Google Trends</p><svg viewBox='0 0 720 215' class='tr' role='img' aria-label='Interés de búsqueda de dolar hoy en AR, índice 0 a 100'><line x1='40' y1='181.0' x2='628' y2='181.0' stroke='#e6e6e6' stroke-width='1' fill='none'/><text x='33' y='185.0' text-anchor='end' font-size='11' fill='#6b6b6b'>0</text><line x1='40' y1='99.5' x2='628' y2='99.5' stroke='#e6e6e6' stroke-width='1' fill='none'/><text x='33' y='103.5' text-anchor='end' font-size='11' fill='#6b6b6b'>50</text><line x1='40' y1='18.0' x2='628' y2='18.0' stroke='#e6e6e6' stroke-width='1' fill='none'/><text x='33' y='22.0' text-anchor='end' font-size='11' fill='#6b6b6b'>100</text><path d='M40.0,18.0 L51.3,76.7 L62.6,88.1 L73.9,99.5 L85.2,97.9 L96.5,96.2 L107.8,110.9 L119.2,93.0 L130.5,106.0 L141.8,97.9 L153.1,91.3 L164.4,101.1 L175.7,99.5 L187.0,104.4 L198.3,97.9 L209.6,94.6 L220.9,114.2 L232.2,99.5 L243.5,97.9 L254.8,102.8 L266.2,114.2 L277.5,115.8 L288.8,119.1 L300.1,109.3 L311.4,117.4 L322.7,124.0 L334.0,124.0 L345.3,120.7 L356.6,125.6 L367.9,130.5 L379.2,135.4 L390.5,119.1 L401.8,122.3 L413.2,128.8 L424.5,115.8 L435.8,119.1 L447.1,130.5 L458.4,128.8 L469.7,115.8 L481.0,117.4 L492.3,119.1 L503.6,124.0 L514.9,130.5 L526.2,125.6 L537.5,125.6 L548.8,132.1 L560.2,132.1 L571.5,130.5 L582.8,132.1 L594.1,130.5 L605.4,135.4 L616.7,130.5 L616.7,181.0 L40.0,181.0 Z' fill='#36BF58' fill-opacity='.12' stroke='none'/><path d='M40.0,18.0 L51.3,76.7 L62.6,88.1 L73.9,99.5 L85.2,97.9 L96.5,96.2 L107.8,110.9 L119.2,93.0 L130.5,106.0 L141.8,97.9 L153.1,91.3 L164.4,101.1 L175.7,99.5 L187.0,104.4 L198.3,97.9 L209.6,94.6 L220.9,114.2 L232.2,99.5 L243.5,97.9 L254.8,102.8 L266.2,114.2 L277.5,115.8 L288.8,119.1 L300.1,109.3 L311.4,117.4 L322.7,124.0 L334.0,124.0 L345.3,120.7 L356.6,125.6 L367.9,130.5 L379.2,135.4 L390.5,119.1 L401.8,122.3 L413.2,128.8 L424.5,115.8 L435.8,119.1 L447.1,130.5 L458.4,128.8 L469.7,115.8 L481.0,117.4 L492.3,119.1 L503.6,124.0 L514.9,130.5 L526.2,125.6 L537.5,125.6 L548.8,132.1 L560.2,132.1 L571.5,130.5 L582.8,132.1 L594.1,130.5 L605.4,135.4 L616.7,130.5' fill='none' stroke='#36BF58' stroke-width='2' stroke-linejoin='round' stroke-linecap='round'/><circle cx='40.0' cy='18.0' r='4.5' fill='#191919' stroke='#ffffff' stroke-width='2'/><circle cx='616.7' cy='130.5' r='4.5' fill='#36BF58' stroke='#ffffff' stroke-width='2'/><text x='40.0' y='7.0' text-anchor='middle' font-size='12' font-weight='700' fill='#191919'>100 · 26 oct</text><text x='625.7' y='134.5' font-size='12' font-weight='700' fill='#36BF58'>hoy 31</text><text x='40' y='205' font-size='11' fill='#6b6b6b'>26 oct</text><text x='628' y='205' text-anchor='end' font-size='11' fill='#6b6b6b'>18 oct</text></svg><figcaption><b>Y el contraste que explica el resto de su semana.</b> «Dólar hoy» nunca baja de 28 sobre 100 en doce meses: es la consulta de fondo de Argentina. Sus notas de deuda y tasas, en cambio, viven un día. El dato se consume el día que sale; la consulta, no.<span class='medido'>Medido en la serie: hoy está en 31 y su pico fue 100 el 26 oct: multiplica por 3 cuando el tema entra.</span></figcaption></figure><p class='pie'>Índice de Google Trends, 0 a 100, bajado el 18 de octubre de 2026. El punto en curso no se dibuja: Google todavía no lo ha cerrado.</p></section>
+<section id="s-rival"><h2>Qué está haciendo la competencia</h2><p class='clave'>Su competidor convierte las consultas en páginas permanentes. Él convierte los datos en notas que duran un día.</p><p>El competidor directo es <b>cronista.com</b> y la comparación es útil justo en su materia: su página del dólar hace <b>710.600 visitas al mes</b> sin reescribirse, la del dólar MEP 12.200 y la de feriados 11.000. <b>Lo que tienen no son mejores notas de tasas: es una página de consulta que no caduca.</b>
+
+Él trabaja deuda, tasas, IPC y tipo de cambio, que es exactamente el territorio de esas páginas. Sus notas del Tesoro y del IPC se apagaron en una semana —de 570 a 2 y de 306 a 5—, no porque estén mal escritas sino porque <b>el formato nota tiene fecha de caducidad y el formato página no</b>.</p><table class='notas'><thead><tr><th>Lo que más tráfico le trae a cronista.com</th><th>Visitas/mes</th></tr></thead><tbody><tr><td class='tit'>Dólar (página permanente de cotización)</td><td class='n'>710,6K</td></tr><tr><td class='tit'>Portada del sitio</td><td class='n'>251,2K</td></tr><tr><td class='tit'>Más allá del petróleo: el negocio invisible de Vaca Muerta</td><td class='n'>12,7K</td></tr><tr><td class='tit'>Resultados de la Quiniela de Entre Ríos</td><td class='n'>12,3K</td></tr><tr><td class='tit'>Cotización del dólar MEP</td><td class='n'>12,2K</td></tr><tr><td class='tit'>Broda apuntó contra el dólar barato</td><td class='n'>11,4K</td></tr><tr><td class='tit'>Feriados: el Gobierno anunció nuevos feriados</td><td class='n'>11K</td></tr></tbody></table><p class='pie'>Semrush, base de AR, datos al 17 de octubre de 2026. Se nombra el dominio porque la cifra tiene que poder comprobarse. Los titulares se reconstruyen desde la URL que muestra Semrush.</p></section>
+<section id="s-cal"><h2>A qué estar pendiente</h2><p class='clave'>La licitación sigue viva ahora mismo, y diciembre le trae la consulta de bolsillo.</p><table class='cal cal3'><thead><tr><th>Cuándo</th><th>Qué pasa y por qué importa</th><th>Cuánto sube</th></tr></thead><tbody><tr><td>Ahora mismo</td><td class='tit'><b>Belgrano Cargas.</b> El interés está en 89 sobre 100, casi en su máximo del año. Sus dos notas llevan 1.990 y 366 clics.</td><td class='n'>en máximo</td></tr><tr><td>Lunes 2 de noviembre</td><td class='tit'><b>Cyber Monday en Argentina.</b> Pico la primera semana de noviembre, hoy en 3.</td><td class='n'>×33</td></tr><tr><td>Mediados de diciembre</td><td class='tit'><b>Aguinaldo.</b> Pico el 14 de diciembre, hoy en 3. Su materia es el bolsillo: encaja.</td><td class='n'>×33</td></tr><tr><td>Cada mes</td><td class='tit'><b>IPC del INDEC.</b> Su nota de septiembre cayó de 306 clics a 5 en una semana: el dato se consume el día que sale, así que el valor está en el antes, no en el después.</td><td class='n'>—</td></tr></tbody></table><p class='pie'>El multiplicador es el pico del año contra el interés de hoy, medido en Google Trends. No es una previsión: es lo que pasó la última vez que llegó esa fecha.</p></section>
+<section id="s-hacer"><h2>Dónde atacar y qué hacer a partir del lunes 26 de octubre</h2><p class='clave'>Seguir la licitación mientras el interés está en 89, y plantear si la consulta de tasas debería ser una página.</p><table class='cal'><thead><tr><th>Cuándo o qué</th><th>Qué hacer, con su cifra</th></tr></thead><tbody><tr><td>Esta semana</td><td><b>Seguir el Belgrano Cargas.</b> El interés está en 89 sobre 100, casi en su máximo del año, y él ya tiene dos notas posicionadas (1.990 y 366 clics).</td></tr><tr><td>El método</td><td><b>Repetir lo que hizo bien:</b> el hecho primero y después la explicación con la cita. Las dos notas juntas hicieron el 88% de su semana.</td></tr><tr><td>A discutir</td><td>Sus notas de deuda e IPC cayeron de 570 a 2 y de 306 a 5. Su rival saca 710.600 visitas al mes de una página de consulta que no reescribe. Vale la pena plantear si parte de su materia debería ser página y no nota.</td></tr><tr><td>Titulación</td><td><b>Sin cifra en el titular.</b> Está en un tercio de lo que no arrancó y en nada de lo que sí. Su nota mayor no lleva ninguna y su largo ya está en la banda correcta.</td></tr></tbody></table><h3>Prácticas que conviene fijar</h3><ul class='reco'><li><b>Repita el molde de las dos notas.</b> El hecho primero y la explicación con la cita después. Le dio el 88% de la semana.</li><li><b>En deuda y tasas, escriba el antes y no el después.</b> El dato se consume el día que sale. El valor está en qué se espera, no en qué pasó.</li><li><b>Quite la jerga del titular.</b> «$1,7 billones» y «operación de recompra» son del oficio, no del lector.</li></ul></section>
+<footer class='pie-doc'><p>Esta página se actualiza cada domingo.</p></footer>
+</main>
+</body>
+</html>
